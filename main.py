@@ -1,5 +1,5 @@
 # James McMahon Coding - A functional Blog site created with Flask, Jinja and BootStrap Frameworks.
-# The site utilises a SQL DB and password salting / hashing is in place.
+# The site utilises a SQL DB with password salting and hashing in place.
 # Contact - jimmymcmahoncoding@gmail.com
 
 from flask import Flask, render_template, redirect, url_for, flash, abort
