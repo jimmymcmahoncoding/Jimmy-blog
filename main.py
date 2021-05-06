@@ -33,7 +33,7 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
-##CONFIGURE TABLE
+##CONFIGURE TABLES
 class User(UserMixin, db.Model):
     __tablename__ = "users"
     id = db.Column(db.Integer, primary_key=True)
@@ -188,8 +188,6 @@ def add_new_post():
         return redirect(url_for("get_all_posts"))
 
     return render_template("make-post.html", form=form, current_user=current_user)
-
-
 
 
 @app.route("/edit-post/<int:post_id>", methods=["GET", "POST"])
